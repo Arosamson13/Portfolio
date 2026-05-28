@@ -357,9 +357,97 @@ nav ul li a:hover{
   margin-bottom:0;
 }
 
-------------------------skills-----------------------
-.skills{
+/* ------------------------Education------------------- */
+.education{
   background: var(--bg-primary);
+  padding: 80px 8%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.education-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.education-card {
+  width: 950px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 0 10px var(--bg-card);
+}
+
+.edu-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  color: var(--button-bg);
+  box-shadow:0 0 10px var(--button-bg);
+}
+
+.edu-content {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.edu-content span {
+  color: var(--heading-accent);
+  font-size: 18px;
+}
+
+.edu-content h2 {
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.edu-content p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.edu-score {
+  width: 170px;
+  height: 100px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow:0 0 10px var(--button-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-score h3 {
+  font-size: 30px;
+  color: var(--heading-accent);
+}
+
+.edu-score p {
+  color: var(--text-primary);
+}
+
+/* ------------------------skills----------------------- */
+.skills{
+  background: var(--bg-secondary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
