@@ -303,6 +303,7 @@ nav ul li a:hover{
 .about-content{
     flex:1;
     min-width:320px;
+    width:100%;
 }
 
 .about-content h4{
@@ -373,7 +374,8 @@ nav ul li a:hover{
 }
 
 .education-card {
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
   border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 30px;
@@ -606,7 +608,7 @@ nav ul li a:hover{
 
 /* -------------------------project-------------------------- */
 .project{
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -674,7 +676,7 @@ nav ul li a:hover{
 /* ------------------------------------------Certificate--------------------------- */
 
 .certificate{
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -752,6 +754,139 @@ nav ul li a:hover{
   font-weight: 300px;
 }
 
+------------------------------Internship---------------------------- */
+.internship{
+  background: var(--bg-primary);
+  padding: 80px 8%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.section-title{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top: 50px;
+  margin-bottom: 30px
+}
+
+.section-title h1 {
+  font-size: 40px;
+  color: var(--heading-accent);
+}
+
+.section-title h4 {
+  font-size: 24px;
+  color: var(--text-secondary);
+}
+
+.internship-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  flex-wrap:wrap;
+  width:100%;
+  max-width:950px;
+  padding:18px;
+  margin:0 auto 40px;
+  box-sizing:border-box;
+}
+
+.internship-left{
+  display:flex;
+  gap:16px;
+  flex:1 1 560px;
+  min-width:220px;
+  /* max-width:calc(100% - 260px); */
+  max-width:100%;
+  background: var(--bg-secondary);
+  border:1px solid var(--border-color);
+  padding:30px;
+  border-radius:12px;
+  width:auto;
+}
+
+.internship-icon{
+  width:64px;
+  height:64px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:26px;
+  color: var(--primary-color);
+  padding:10px;
+}
+
+.internship-content .date{
+  color: var(--heading-accent);
+  font-size:20px;
+}
+
+.internship-content h2{
+  font-size:30px;
+  margin:10px 0;
+}
+
+.internship-content h3{
+  color: var(--heading-accent);
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.internship-content p{
+  color: var(--text-primarytext);
+  line-height:1.6;
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.tech-stack{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.tech-stack span{
+  padding:6px 12px;
+  background:var(--bg-secondary);
+  border:1px solid var(--primary-light);
+  border-radius:8px;
+  color: var(--primary-color);
+  font-size:16px;
+  margin-top: 10px;
+  transition:0.2s;
+}
+
+.tech-stack span:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 6px var(--primary-light);
+}
+
+.internship-right{
+  flex:0 0 240px;
+  width:240px;
+  max-width:260px;
+  background: var(--bg-secondary);
+  border-left:1px solid var(--heading-accent);
+  padding:16px;
+  border-radius:12px;
+}
+
+.internship-right h2{
+  margin-bottom:12px;
+  color: var(--heading-accent);
+}
+
+.internship-right ul{
+  margin-left:12px;
+}
+
+.internship-right li{
+  color: var(--text-primarytext);
+  line-height:1.6;
+}
+
 /* ----------------------------Contact---------------------------- */
 
 .contact {
@@ -789,7 +924,7 @@ nav ul li a:hover{
   border-radius: 10px;
   border: 1px solid var(--border-color);
   height: 45px;
-  width: 300%;
+  width: 200%;
   max-width: 650px;
   margin-top: 10px;
   outline: var(--button-hover);
@@ -802,7 +937,7 @@ nav ul li a:hover{
   border-radius: 15px;
   border: 1px solid var(--border-color);
   height: 260px;
-  width: 300%;
+  width: 200%;
   max-width: 650px;
   resize: none;
   outline: var(--button-hover);
@@ -941,6 +1076,15 @@ footer{
     margin-left: 0;
     padding: 30px 20px;
   }
+
+  .internship-card {
+    margin-left: 0;
+  }
+
+  .internship-right,
+  .internship-left {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -990,6 +1134,26 @@ footer{
   .contact-form input,
   .contact-form textarea {
     max-width: 100%;
+  }
+
+  /* Stack internship cards vertically on small screens */
+  .internship-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .internship-left,
+  .internship-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .internship-right {
+    border-left: none;
+    border-top: 1px solid var(--heading-accent);
+    padding-top: 12px;
   }
 }
 
