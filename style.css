@@ -30,6 +30,11 @@ body{
   color:var(--text-primary);
 }
 
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
 /* ---------------------Navbar---------------------- */
 
 nav{
@@ -449,7 +454,7 @@ nav ul li a:hover{
 
 /* ------------------------skills----------------------- */
 .skills{
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -608,7 +613,7 @@ nav ul li a:hover{
 
 /* -------------------------project-------------------------- */
 .project{
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -676,7 +681,7 @@ nav ul li a:hover{
 /* ------------------------------------------Certificate--------------------------- */
 
 .certificate{
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -756,7 +761,7 @@ nav ul li a:hover{
 
 ------------------------------Internship---------------------------- */
 .internship{
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   padding: 80px 8%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -957,6 +962,17 @@ nav ul li a:hover{
   margin-top: 10px;
 }
 
+.contact-form .send-btn i{
+  margin-right: 8px;
+}
+
+.contact-form .send-btn:hover{
+  background: var(--button-hover);
+  color: var(--button-text);
+  box-shadow:0 0 20px var(--glow-color);
+  transform:translateY(-5px);
+}
+
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -967,11 +983,17 @@ nav ul li a:hover{
 .contact-right h3{
   color: var(--heading-accent);
   font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .contact-right p{
   color: var(--text-secondary);
   margin-top: 10px;
+}
+
+.contact-right p i{
+  color: var(--primary-light);
+  margin-right: 10px;
 }
 
 footer{

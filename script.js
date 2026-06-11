@@ -17,7 +17,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-text, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-image, .project-container, .certificate-container', { origin: 'bottom' });
+ScrollReveal().reveal('.home-text, .heading, .head, .section-title', { origin: 'top' });
+ScrollReveal().reveal('.home-image, .project-container, .certificate-container, .internship-card, .education-box', { origin: 'bottom' });
 ScrollReveal().reveal('.about-img, .technical-skill, .contact-left', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content, .tool-box, .contact-right', { origin: 'right' });
